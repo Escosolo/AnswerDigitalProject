@@ -3,13 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="79d354c6-b45a-47ae-a497-7a47ee05536f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Screenshots/SummerItemsDisplayed.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/Screenshots/SummerItemsDisplayed.jpeg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Screenshots/WestPalmBeach.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/Screenshots/WestPalmBeach.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/base/testBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/base/testBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/workflow/newprojectMaven/stepDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/workflow/newprojectMaven/stepDefinitions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/workflow/newprojectMaven/stepDefinitions2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/workflow/newprojectMaven/stepDefinitions2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/workflow/newprojectMaven/stepDefinitions3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/workflow/newprojectMaven/stepDefinitions3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/workflow/newprojectMaven/stepDefinitions4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/workflow/newprojectMaven/stepDefinitions4.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,7 +24,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/workflow/newprojectMaven/RunnerTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="136">
@@ -59,11 +54,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/workflow/newprojectMaven/stepDefinitions3.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="142">
-              <caret line="40" column="16" selection-start-line="40" selection-start-column="16" selection-end-line="40" selection-end-column="16" />
+            <state relative-caret-position="193">
+              <caret line="43" column="64" lean-forward="true" selection-start-line="43" selection-start-column="64" selection-end-line="43" selection-end-column="64" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -256,7 +251,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1572254914034" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1572256036326" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
   </component>
   <component name="RunDashboard">
@@ -271,7 +266,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Cucumber java.Feature: CreateAccount">
+  <component name="RunManager" selected="JUnit.RunnerTest">
     <configuration name="Feature: CreateAccount" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="1.2" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/CreateAccount.feature" />
@@ -363,8 +358,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Cucumber java.Feature: CreateAccount" />
         <item itemvalue="JUnit.RunnerTest" />
+        <item itemvalue="Cucumber java.Feature: CreateAccount" />
         <item itemvalue="Cucumber java.Scenario: As a user, I want to create an account with invalid details" />
         <item itemvalue="Cucumber java.Scenario: As a user, I want to create an account with valid credentials" />
         <item itemvalue="Cucumber java.Feature: SummerDressSearchPriceChange" />
@@ -385,9 +380,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Scenario__As_a_user,_I_want_to_create_an_account_with_valid_credentials - 2019.10.28 at 06h 27m 41s.xml">
-      <configuration name="Scenario: As a user, I want to create an account with valid credentials" configurationId="CucumberJavaRunConfigurationType" />
-    </history-entry>
     <history-entry file="Scenario__As_a_user,_I_want_to_create_an_account_with_invalid_details - 2019.10.28 at 06h 29m 23s.xml">
       <configuration name="Scenario: As a user, I want to create an account with invalid details" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
@@ -415,6 +407,9 @@
     <history-entry file="Feature__CreateAccount - 2019.10.28 at 09h 28m 02s.xml">
       <configuration name="Feature: CreateAccount" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
+    <history-entry file="RunnerTest - 2019.10.28 at 09h 50m 04s.xml">
+      <configuration name="RunnerTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -427,8 +422,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20134228" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20134228" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -437,12 +433,12 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3286119" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3286119" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3286119" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.3286119" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3286119" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.3286119" />
@@ -609,16 +605,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/workflow/newprojectMaven/stepDefinitions3.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="40" column="16" selection-start-line="40" selection-start-column="16" selection-end-line="40" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/CreateAccount.feature">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -630,6 +616,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="44" selection-start-line="8" selection-start-column="44" selection-end-line="8" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/workflow/newprojectMaven/stepDefinitions3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="43" column="64" lean-forward="true" selection-start-line="43" selection-start-column="64" selection-end-line="43" selection-end-column="64" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

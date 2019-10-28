@@ -41,7 +41,7 @@ public class stepDefinitions3 extends testBase {
     public void iEnterMyNewEmailAddress() {
         random = 100 + (int) (Math.random() * ((1000 - 1) + 1));
         System.out.println(random);
-        driver.findElement(By.id("email_create")).sendKeys("swith" + random + "@gmail.com");
+        driver.findElement(By.id("email_create")).sendKeys("swit" + random + "@gmail.com");
     }
 
 
