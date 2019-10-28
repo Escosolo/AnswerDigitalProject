@@ -100,7 +100,7 @@ public class stepDefinitions extends testBase {
 
 		// now copy the  screenshot to desired location using copyFile //method
 
-		FileUtils.copyFile(src, new File("C:\\Users\\Esco\\Documents\\AnswerDigital\\Screenshots\\BannerDisplayed.jpeg"));
+		FileUtils.copyFile(src, new File("C:\\Users\\Esco\\Documents\\AnswerDigital\\newprojectMaven\\Screenshots\\BannerDisplayed.jpeg"));
 		
 }
       }

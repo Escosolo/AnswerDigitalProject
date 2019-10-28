@@ -41,7 +41,7 @@ public class stepDefinitions3 extends testBase {
     public void iEnterMyNewEmailAddress() {
         random = 100 + (int) (Math.random() * ((1000 - 1) + 1));
         System.out.println(random);
-        driver.findElement(By.id("email_create")).sendKeys("switch" + random + "@gmail.com");
+        driver.findElement(By.id("email_create")).sendKeys("swith" + random + "@gmail.com");
     }
 
 
@@ -123,7 +123,7 @@ public class stepDefinitions3 extends testBase {
     public void iVerifyThatIsLoggedIn(String user) throws Throwable {
         Assert.assertEquals(user, driver.findElement(By.cssSelector("span")).getText());
         File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-        FileUtils.copyFile(src, new File("C:\\Users\\Esco\\Documents\\AnswerDigital\\Screenshots\\AccountNameDisplayed.jpeg"));
+        FileUtils.copyFile(src, new File("C:\\Users\\Esco\\Documents\\AnswerDigital\\newprojectMaven\\Screenshots\\AccountNameDisplayed.jpeg"));
         System.out.println("Completed Registration has taken user to My Account Page and Account Name is seen on top right");
         Thread.sleep(5000);
     }
@@ -139,7 +139,7 @@ public class stepDefinitions3 extends testBase {
         SignInPage signInPage = PageFactory.initElements(driver, SignInPage.class);
         signInPage.I_see_registeruser_error_message(errormessage);
         File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-        FileUtils.copyFile(src, new File("C:\\Users\\Esco\\Documents\\AnswerDigital\\Screenshots\\errormessage.jpeg"));
+        FileUtils.copyFile(src, new File("C:\\Users\\Esco\\Documents\\AnswerDigital\\newprojectMaven\\Screenshots\\errormessage.jpeg"));
         System.out.println("Error message displayed as a result of invalid credentials inputted");
     }
 }

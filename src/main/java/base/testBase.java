@@ -39,7 +39,7 @@ public class testBase {
 		driver = new InternetExplorerDriver();
 		
 	}else if (CONFIG.getProperty("browser").equals("chrome")){
-		  System.setProperty("webdriver.chrome.driver","C:\\Users\\Esco\\Documents\\AnswerDigital\\chromedriver.exe");
+		  System.setProperty("webdriver.chrome.driver","C:\\Users\\Esco\\Documents\\AnswerDigital\\newprojectMaven\\chromedriver.exe");
 		    driver = new ChromeDriver();	
 	}
 	driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);

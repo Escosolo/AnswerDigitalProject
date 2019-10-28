@@ -44,7 +44,7 @@ public class stepDefinitions2 extends testBase {
     	
     	File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
     	// now copy the  screenshot to desired location using copyFile //method
-    	FileUtils.copyFile(src, new File("C:\\Users\\Esco\\Documents\\AnswerDigital\\Screenshots\\subNavigationButtonsAppear.jpeg"));
+    	FileUtils.copyFile(src, new File("C:\\Users\\Esco\\Documents\\AnswerDigital\\newprojectMaven\\Screenshots\\subNavigationButtonsAppear.jpeg"));
     	System.out.println("subNavigationButtonsAppear");
     }
 
@@ -67,7 +67,7 @@ public class stepDefinitions2 extends testBase {
              actions.moveToElement(summerdressitems).perform();
             // Thread.sleep(5000);
 			File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-			FileUtils.copyFile(src, new File("C:\\Users\\Esco\\Documents\\AnswerDigital\\Screenshots\\SummerItemsDisplayed.jpeg"));
+			FileUtils.copyFile(src, new File("C:\\Users\\Esco\\Documents\\AnswerDigital\\newprojectMaven\\Screenshots\\SummerItemsDisplayed.jpeg"));
 			System.out.println("SummerItemsDisplayed");
      }
 
@@ -91,7 +91,7 @@ public class stepDefinitions2 extends testBase {
         Thread.sleep(5000);
         driver.findElement(By.cssSelector("div.product-count")).click();
         File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-        FileUtils.copyFile(src, new File("C:\\Users\\Esco\\Documents\\AnswerDigital\\Screenshots\\Searchresultsloading.jpeg"));
+        FileUtils.copyFile(src, new File("C:\\Users\\Esco\\Documents\\AnswerDigital\\newprojectMaven\\Screenshots\\Searchresultsloading.jpeg"));
         System.out.println("Bug Found - Search Results still loading");
     }
 

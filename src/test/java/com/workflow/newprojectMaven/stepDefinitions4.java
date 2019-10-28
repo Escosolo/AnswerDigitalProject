@@ -44,7 +44,7 @@ public class stepDefinitions4 extends testBase {
     @Then("^I capture a screenshot$")
     public void i_capture_a_screenshot() throws Throwable {
         File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-        FileUtils.copyFile(src, new File("C:\\Users\\Esco\\Documents\\AnswerDigital\\Screenshots\\WestPalmBeach.jpeg"));
+        FileUtils.copyFile(src, new File("C:\\Users\\Esco\\Documents\\AnswerDigital\\newprojectMaven\\Screenshots\\WestPalmBeach.jpeg"));
         System.out.println("Bug Found - West Palm Beach Unreachable");
     }
 
