@@ -3,7 +3,7 @@
   Feature: Register New User
 
   Scenario Outline:  As a user, I want to create an account with valid credentials
-    Given I go to the landing page
+    Given I go to the landing page and I validate title of page
       And I click the SignIn link
       And I enter my email address
       And I click on the create account button
@@ -33,7 +33,7 @@
     @CreateAccount
 
     Scenario Outline:  As a user, I want to create an account with invalid details
-      Given I go to the landing page
+      Given I go to the landing page and I validate title of page
       And I click the SignIn link
       And I enter my email address
       And I click on the create account button

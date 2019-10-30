@@ -8,9 +8,12 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 
-public class SummerDressesPage extends testBase {
+    public class SummerDressesPage extends testBase {
     @FindBy(how = How.XPATH, using = "//*[@id= 'layered_price_slider']/a[1]")
     public static WebElement PriceRangeSlider1;
+
+    @FindBy(how = How.XPATH, using = "//*[@id=\"center_column\"]/ul")
+    public static WebElement SummerItems;
 
     @FindBy(how = How.XPATH, using = "//*[@id= 'layered_price_slider']/a[2]")
     public static WebElement PriceRangeSlider2;
@@ -30,5 +33,8 @@ public class SummerDressesPage extends testBase {
         action.clickAndHold(PriceRangeSlider2).moveByOffset(-142, 0).release().build().perform();
     }
 
-
+    public void I_want_to_check_for_visibility_of_summer_items(){
+        Actions action = new Actions(driver);
+        action.moveToElement(SummerItems).build().perform();
+    }
 }

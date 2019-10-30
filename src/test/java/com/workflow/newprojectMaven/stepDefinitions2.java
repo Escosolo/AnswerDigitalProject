@@ -29,11 +29,8 @@ public class stepDefinitions2 extends testBase {
 
     @When("^I move my mouse to hover on WOMEN button$")
     public void i_move_my_mouse_to_hover_on_WOMEN_button() throws Throwable {
-                Actions actions = new Actions(driver);
-        //Retrieve WebElement 'Women' to perform mouse hover
-        WebElement menu = driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Categories'])[1]/following::a[1]"));
-        //Mouse hover menu 'WOMEN'
-        actions.moveToElement(menu).perform();
+        HomePage homepage = PageFactory.initElements(driver, HomePage.class);
+        homepage.i_want_to_hover_on_women_button();
         Thread.sleep(5000);
     }
 
@@ -43,7 +40,6 @@ public class stepDefinitions2 extends testBase {
     public void i_validate_that_sub_navigation_options_appear() throws Throwable {
     	
     	File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-    	// now copy the  screenshot to desired location using copyFile //method
     	FileUtils.copyFile(src, new File("C:\\Users\\Esco\\Documents\\AnswerDigital\\newprojectMaven\\Screenshots\\subNavigationButtonsAppear.jpeg"));
     	System.out.println("subNavigationButtonsAppear");
     }
@@ -53,19 +49,16 @@ public class stepDefinitions2 extends testBase {
     @Then("^I click on Summer Dresses button$")
 
     public void i_click_on_Summer_Dresses_button() throws Throwable {
-    	WebElement selectMenuOption = driver.findElement(By.linkText("Summer Dresses"));
-    	//WebElement selectMenuOption = driver.findElement(By.xpath("xpath=(.//*[normalize-space(text()) and normalize-space(.)='Evening Dresses'])[1]/following::a[1]"));
-        selectMenuOption.click();
-       // System.out.println("Selected 'Summer Dresses' from WOMEN");
+        HomePage homepage = PageFactory.initElements(driver, HomePage.class);
+        homepage.i_click_on_summer_dresses_button();
 
     }
 
         @Then("^I verify only Summer items display in the search results$")
         public void i_verify_only_Summer_items_display_in_the_search_results () throws Throwable {
-        	 Actions actions = new Actions(driver);
-        	 WebElement summerdressitems = driver.findElement(By.xpath("//*[@id=\"center_column\"]/ul"));
-             actions.moveToElement(summerdressitems).perform();
-            // Thread.sleep(5000);
+            SummerDressesPage summerDressesPage = PageFactory.initElements(driver, SummerDressesPage.class);
+            summerDressesPage.I_want_to_check_for_visibility_of_summer_items();
+
 			File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 			FileUtils.copyFile(src, new File("C:\\Users\\Esco\\Documents\\AnswerDigital\\newprojectMaven\\Screenshots\\SummerItemsDisplayed.jpeg"));
 			System.out.println("SummerItemsDisplayed");
@@ -80,16 +73,13 @@ public class stepDefinitions2 extends testBase {
         summerDressesPage.I_want_to_change_price_range2();
 
 
-//        WebElement slider = driver.findElement(By.cssSelector("#ul_layered_price_0"));
-//            Actions actions = new Actions(driver);
-//            actions.dragAndDropBy(slider, 237, 1213).release().build().perform();
-//            slider.click();
 
     }
     @Then("^I verify search results are updated$")
     public void i_verify_search_results_are_updated() throws Throwable {
-        Thread.sleep(5000);
-        driver.findElement(By.cssSelector("div.product-count")).click();
+        JavascriptExecutor jse = (JavascriptExecutor) driver;
+        jse.executeScript("window.scrollBy(0,-111)", "");
+
         File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
         FileUtils.copyFile(src, new File("C:\\Users\\Esco\\Documents\\AnswerDigital\\newprojectMaven\\Screenshots\\Searchresultsloading.jpeg"));
         System.out.println("Bug Found - Search Results still loading");
@@ -99,5 +89,8 @@ public class stepDefinitions2 extends testBase {
     public void i_validate_that_items_returned_are_within_the_price_range() throws Throwable {
 
     }
-
+    @Then("^I close the browser$")
+    public void iCloseTheBrowser() {
+        driver.quit();
+    }
 }
